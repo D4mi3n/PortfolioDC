@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body class="body">
+    <div class="navigation">
+        <div class="banner">
+            <img src="images/landscape_test.jpg" alt="" class="cover">
+        </div>
+        <div class="navLink">
+            <ul>
+                <li><a href="http://">Home</a> </li>
+                <li><a href="http://">About Me</a></li>
+                <li><a href="http://">Contact</a></li>
+                <li><a href="http://">Portfolio</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="sec">
+        <header>
+            <div class="toggle"></div>
+            <a href="http://" class="btn">More</a>  
+        </header>
+
+        <div class="imgbox">
+            <img src="images/light.jpg" class="cover" alt="">
+        </div>
+        <div class="content">
+            <h2>Hi i am<br><span>CALLAS Damien</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolores facere ducimus eos cumque reprehenderit. Esse molestias totam itaque, eligendi ab quo temporibus sapiente id! Quidem neque quisquam est tempore!</p>
+            <a href="Cv.html" class="btn">Download my CV</a>
+        </div>
+        <footer>
+            
+            <ul class="sci">
+                <li><a href="http://" target="blank">
+                    <img src="images/reseau/twitter.png" class="icone" alt="" srcset=""></a> </li>
+
+                <li><a href="https://www.instagram.com/the_8empereur/" target="blank">
+                    <img src="images/reseau/instagram.png" class="icone" alt="" srcset=""></a> </li>
+                
+                <li><a href="http://" target="blank">
+                    <img src="images/reseau/youtube.png" alt="" class="icone" srcset=""></a> </li>
+            </ul>
+        </footer>
+    </section>
+
+    <script>
+        let menuToggle = document.querySelector('.toggle');
+        //console.log(menuToggle);
+        //console.info(menuToggle);
+        let navigation = document.querySelector('.navigation');
+        let sec = document.querySelector('.sec');
+        let body = document.querySelector('.body');
+        menuToggle.onclick = function(){
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            sec.classList.toggle('active');
+            body.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
